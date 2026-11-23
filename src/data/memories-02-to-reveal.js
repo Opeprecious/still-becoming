@@ -42,7 +42,17 @@
     { id: "becoming-5", chapter: "becoming", type: "image", shape: "square", src: I + "adulthood/wall-5.jpg", caption: "Sun kissed." },
     { id: "becoming-6", chapter: "becoming", type: "image", shape: "square", src: I + "adulthood/wall-6.jpg", caption: "Hot Onibenjo" },
 
-    /* ================= 04 · THE MAN HE IS ================= */
+    /* ================= 04 · RIGHT NOW ================= */
+    // Captions below are drafts written from the photographs.
+    { id: "now-intro-1", chapter: "now", type: "image", shape: "portrait", src: I + "recent/intro-1.jpg", caption: "" },
+    { id: "now-intro-2", chapter: "now", type: "image", shape: "square",   src: I + "recent/intro-2.jpg", caption: "" },
+    { id: "now-1", chapter: "now", type: "image", shape: "square", src: I + "recent/wall-1.jpg", caption: "Main character, waiting on your coffee." },
+    { id: "now-2", chapter: "now", type: "image", shape: "square", src: I + "recent/wall-2.jpg", caption: "Found the party. Became the party." },
+    { id: "now-3", chapter: "now", type: "image", shape: "square", src: I + "recent/wall-3.jpg", caption: "A whole city behind you, and you’re the view." },
+    { id: "now-4", chapter: "now", type: "image", shape: "square", src: I + "recent/wall-4.jpg", caption: "Flying, and smiling the whole way down." },
+    { id: "now-5", chapter: "now", type: "image", shape: "square", src: I + "recent/wall-5.jpg", caption: "Somebody take that sword away from you." },
+
+    /* ================= 05 · THE MAN YOU ARE ================= */
     { id: "present-intro-1", chapter: "present", type: "image", shape: "portrait", src: I + "present/intro-1.jpg", caption: "" },
     { id: "present-intro-2", chapter: "present", type: "image", shape: "square",   src: I + "present/intro-2.jpg", caption: "" },
 
@@ -53,7 +63,7 @@
     wall("us-5", "present", "together", 5, "Us at Discovery Museum in Abuja, this was your 2025 birthday."),
     wall("us-6", "present", "together", 6, "", { fit: true }),      // no caption in Figma yet
 
-    /* ================= 05 · THE THINGS AHEAD ================= */
+    /* ================= 06 · THE THINGS AHEAD ================= */
     // The intro pictures and the chapter's intro picture are still placeholders in Figma.
     { id: "future-01", chapter: "future", type: "image", shape: "portrait",  src: I + "future/placeholder-01.svg", caption: "" },
     { id: "future-02", chapter: "future", type: "image", shape: "landscape", src: I + "future/placeholder-02.svg", caption: "" },

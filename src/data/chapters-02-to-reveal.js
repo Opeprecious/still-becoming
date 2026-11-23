@@ -114,10 +114,55 @@
       ]
     },
 
-    /* ================= 04 · THE MAN HE IS ================= */
+    /* ================= 04 · RIGHT NOW =================
+       Who and what he is today. Captions and lines here are drafts written
+       from the photographs: replace them with your own words. */
+    {
+      id: "now",
+      number: "04",
+      title: "Right Now",
+      atmosphere: ["#0b3d4a", "#14707a", "#e0a74a"],          // deep teal, sea green, sunlit gold
+      ui: ui(DARK_UI, { paper: "#0b3d4a", shadow: "0 1px 26px rgba(4,30,38,.75), 0 0 4px rgba(4,30,38,.4)" }),
+      world: {
+        glow: "#fff1c9", light: "#ffe2a8", lightPower: 1.35, fill: 0.4,
+        sky: "#2aa0a6", ground: "#0b3d4a", fog: "#12606b", fogDensity: 0.03,
+        shapes: ["#19a3a0", "#f2b84b", "#0f6f7c", "#ffd98a", "#7fdad0"],
+        rim: "#c9fff4", trail: "#ffe9b0",
+        motion: 1.25, trailPower: 0.4, spread: 1.05, glowScale: 1.05,   // bright, open and on the move
+        cameraGate: { pos: [0.8, 0.3, 12.4], look: [0, -3.0, 0] },
+        camera:     { pos: [-0.6, 0, 9.4],   look: [0, -2.3, 0] },
+        cameraEnd:  { pos: [-1.8, -1.0, 5.8], look: [-0.3, -2.4, 0] }
+      },
+      gate: {
+        eyebrow: "Chapter 04",
+        title: "Right Now",
+        line: "Who you are, and what you are, today.",
+        image: "assets/images/recent/gate.jpg",
+        cta: "Step inside"
+      },
+      beats: [
+        {
+          id: "intro", layout: "intro", name: "These days",
+          eyebrow: "These days",
+          text: "Look at you now: out in the world, cap on, saying yes to all of it.",
+          memories: ["now-intro-1", "now-intro-2"]
+        },
+        {
+          id: "wall", layout: "gathering", name: "Right now",
+          memories: ["now-1", "now-2", "now-3", "now-4", "now-5"]
+        },
+        {
+          id: "close", layout: "close", name: "Onward",
+          title: "And this is only who you are so far.",
+          text: "Curious, fearless, and still the most fun person in any room."
+        }
+      ]
+    },
+
+    /* ================= 05 · THE MAN YOU ARE ================= */
     {
       id: "present",
-      number: "04",
+      number: "05",
       title: "The Man You Are",
       atmosphere: ["#fbf3e2", "#f1c98a", "#c98e55"],          // warm ivory, amber, deep brown
       ui: {
@@ -135,7 +180,7 @@
         cameraEnd:  { pos: [-1.2, -0.8, 5.8], look: [-0.2, -1.5, 0] }
       },
       gate: {
-        eyebrow: "Chapter 04",
+        eyebrow: "Chapter 05",
         title: "The Man You Are",
         line: "Beyond everything, you are the man I love.",
         image: "assets/images/present/gate.jpg",
@@ -163,10 +208,10 @@
       ]
     },
 
-    /* ================= 05 · THE THINGS AHEAD ================= */
+    /* ================= 06 · THE THINGS AHEAD ================= */
     {
       id: "future",
-      number: "05",
+      number: "06",
       title: "The Things Ahead",
       atmosphere: ["#bcd6f2", "#f7f3e6", "#f3deaa"],          // soft blue, luminous white, pale gold
       ui: {
@@ -184,7 +229,7 @@
         cameraEnd:  { pos: [0, 1.4, 8.5],  look: [0, -0.4, 0] }
       },
       gate: {
-        eyebrow: "Chapter 05",
+        eyebrow: "Chapter 06",
         title: "The Things Ahead",
         line: "Everything from here is still unwritten.",
         image: "assets/images/future/chapter-intro.svg",

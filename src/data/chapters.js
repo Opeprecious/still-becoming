@@ -39,8 +39,9 @@ SB.outline = [
   { id: "childhood", number: "01", title: "The Little Beginnings" },
   { id: "adventures", number: "02", title: "The Adventures" },
   { id: "becoming",  number: "03", title: "The Becoming" },
-  { id: "present",   number: "04", title: "The Man You Are" },
-  { id: "future",    number: "05", title: "The Things Ahead" },
+  { id: "now",       number: "04", title: "Right Now" },
+  { id: "present",   number: "05", title: "The Man You Are" },
+  { id: "future",    number: "06", title: "The Things Ahead" },
   { id: "reveal",    number: "✦",  title: "The Birthday Reveal" }
 ];
 
