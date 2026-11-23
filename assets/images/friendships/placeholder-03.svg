@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#dcbcf0"/><stop offset="1" stop-color="#b488d6"/></linearGradient>
+    <radialGradient id="l" cx=".7" cy=".28" r=".5"><stop offset="0" stop-color="#fff" stop-opacity=".7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1000" height="750" fill="url(#g)"/>
+  <rect width="1000" height="750" fill="url(#l)"/>
+  <rect x="24" y="24" width="952" height="702" fill="none" stroke="#2a2148" stroke-opacity=".35" stroke-width="2" stroke-dasharray="10 10"/>
+  <text x="50%" y="44%" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" letter-spacing="6" fill="#2a2148" opacity=".8">PLACEHOLDER</text>
+  <text x="50%" y="54%" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="#2a2148" opacity=".72">Friends photo 03</text>
+  <text x="50%" y="62%" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#2a2148" opacity=".55">Replace with a real photograph</text>
+</svg>

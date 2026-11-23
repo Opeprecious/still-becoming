@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9cc8ee"/><stop offset=".55" stop-color="#f6c3a4"/><stop offset="1" stop-color="#f9e08d"/></linearGradient>
+    <radialGradient id="l" cx=".5" cy=".4" r=".5"><stop offset="0" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)"/>
+  <rect width="1200" height="800" fill="url(#l)"/>
+  <rect x="28" y="28" width="1144" height="744" fill="none" stroke="#2a2148" stroke-opacity=".35" stroke-width="2" stroke-dasharray="10 10"/>
+  <text x="50%" y="43%" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700" letter-spacing="7" fill="#2a2148" opacity=".8">PLACEHOLDER</text>
+  <text x="50%" y="54%" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="46" fill="#2a2148" opacity=".72">Chapter 01 intro picture</text>
+  <text x="50%" y="63%" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#2a2148" opacity=".55">The one photo that opens this chapter</text>
+</svg>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#05041a">
+  <meta name="robots" content="noindex">
+  <title>Still Becoming · A world of you</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body data-view="loading">
+
+  <!-- The world: sky gradient layers (one per chapter), the 3D canvas, and a CSS stand-in if WebGL is unavailable -->
+  <div class="world" aria-hidden="true">
+    <div class="atmosphere" id="atmosphere"></div>
+    <div class="fallback" id="fallback">
+      <i class="fallback__arch"></i>
+      <i class="fallback__glow"></i>
+      <i class="fallback__shape fallback__shape--1"></i>
+      <i class="fallback__shape fallback__shape--2"></i>
+      <i class="fallback__shape fallback__shape--3"></i>
+      <i class="fallback__shape fallback__shape--4"></i>
+    </div>
+    <canvas id="scene"></canvas>
+    <div class="bloom" id="bloom"></div>
+  </div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader" role="status" aria-label="Loading">
+    <span class="loader__mark">Still Becoming</span>
+    <span class="loader__bar"><i id="loaderBar"></i></span>
+  </div>
+
+  <!-- Understated top bar: where am I, and the way to every chapter -->
+  <header class="topbar">
+    <span class="topbar__mark">Still Becoming</span>
+    <span class="topbar__right">
+      <!-- the place label doubles as the way to the chapter list -->
+      <button class="topbar__btn" id="openOverview" type="button" aria-haspopup="dialog" aria-label="Open the chapter list"><span id="where" aria-live="polite"></span></button>
+    </span>
+  </header>
+
+  <!-- How far through the current chapter's story -->
+  <div class="rail" aria-hidden="true"><i id="railFill"></i></div>
+
+  <main>
+    <!-- Opening scene: The First Light -->
+    <section class="opening" id="opening" aria-labelledby="openingTitle">
+      <h1 class="opening__title rise" id="openingTitle" data-site="title"></h1>
+      <p class="opening__sub rise" data-site="subtitle"></p>
+      <button class="enter rise" id="enter" type="button"><span data-site="enterLabel"></span></button>
+    </section>
+
+    <!-- Chapters are built here from src/data/chapters.js -->
+    <div id="chapters"></div>
+  </main>
+
+  <!-- Larger memory view -->
+  <dialog class="mv" id="memoryView" aria-label="Picture">
+    <div class="mv__card">
+      <p class="mv__caption" data-mv-caption></p>
+      <div class="mv__frame" data-mv-frame><div class="mv__media" data-mv-media></div></div>
+      <button class="mv__back" type="button" data-mv-close>← Back</button>
+    </div>
+  </dialog>
+
+  <!-- Chapter overview -->
+  <dialog class="overview" id="overview" aria-labelledby="overviewTitle">
+    <div class="overview__card">
+      <button class="mv__close" type="button" id="closeOverview" aria-label="Close chapter list">
+        <span aria-hidden="true">×</span>
+      </button>
+      <h2 class="overview__title" id="overviewTitle">The journey</h2>
+      <ol class="overview__list" id="overviewList"></ol>
+    </div>
+  </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+  <script src="src/data/chapters.js"></script>
+  <script src="src/data/chapters-02-to-reveal.js"></script>
+  <script src="src/data/memories.js"></script>
+  <script src="src/data/memories-02-to-reveal.js"></script>
+  <script src="src/scene/world.js"></script>
+  <script src="src/ui/memory-view.js"></script>
+  <script src="src/ui/chapter.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>
